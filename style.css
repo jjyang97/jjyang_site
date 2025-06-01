@@ -1,23 +1,22 @@
 body {
-  font-family: Tahoma, "MS Sans Serif", Geneva, sans-serif;
-  background-color: #fefefe;
-  color: #000;
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 2em;
-  font-size: 14px;
+    font-family: monospace;
+    background-color: #fefefe;
+    color: #000;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2em;
 }
 
 h1, h2 {
-  border-bottom: 1px solid #ccc;
-  padding-bottom: 0.2em;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 0.2em;
 }
 
 a {
-  color: #003399;
-  text-decoration: underline;
+    color: #003399;
+    text-decoration: underline;
 }
 
 ul {
-  list-style: square;
+    list-style: square;
 }
