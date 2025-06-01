@@ -15,51 +15,83 @@
       <a href="/boba.html">Boba</a>
     </nav>
   </header>
-    <p><strong>Data Engineer</strong></p>
-    <p>Perth, Australia<br />
-    Shanghai, China</p>
-    <p><a href="mailto:jjyang97@outlook.com">jjyang97@outlook.com</a></p>
+  <p><strong>a quiet buddhist learning to enjoy process and progress</strong></p>
+  <p>Perth, Australia<br />
+  Shanghai, China</p>
+  <p><a href="mailto:jjyang97@outlook.com">jjyang97@outlook.com</a></p>
 
-    <h2>Projects</h2>
-    <p><strong>data platform</strong> – azure data engineering, databricks lakehouse</p>
-    <p><strong>home lab</strong> – building with Python and Synology NAS</p>
+  <h2>Projects</h2>
+  <p><strong><a href="#" id="open-work-modal">my day job</a></strong> — my work as a data engineer</p>
+  <p><strong>home lab</strong> – building with Python and Synology NAS</p>
 
-    <h2>Interests</h2>
-    <p><strong>anime</strong> – Hunter x Hunter</p>
-    <p><strong>automation</strong> – factorio, home automation, gadgets</p>
-    <p><strong>basketball</strong> – nba fantasy, playoffs</p>
-    <p><strong>fashion</strong> – comfort wear, layering, accessories</p>
-    <p><strong>fitness</strong> – running, longevity</p>
+  <h2>Interests</h2>
+  <p><strong>anime</strong> – Hunter x Hunter</p>
+  <p><strong>automation</strong> – factorio, home automation, gadgets</p>
+  <p><strong>basketball</strong> – nba fantasy, playoffs</p>
+  <p><strong>fashion</strong> – comfort wear, layering, accessories</p>
+  <p><strong>fitness</strong> – running, longevity</p>
 
-    <h2>Resume</h2>
-    <p><a href="/resume.pdf">Download PDF</a></p>
+  <h2>Resume</h2>
+  <p><a href="/resume.pdf">Download PDF</a></p>
 
-    <h2>Socials</h2>
-    <p>
-        <span>
-            <img src="/icons/github.png" width="16" alt="GitHub icon" style="vertical-align: middle; margin-right: 4px;" />
-            <a href="https://github.com/jjyang97" target="_blank" rel="noopener noreferrer">GitHub</a>
-        </span><br />
-        <span>
-            <img src="/icons/linkedin.png" width="16" alt="LinkedIn icon" style="vertical-align: middle; margin-right: 4px;" />
-            <a href="https://www.linkedin.com/in/jiajun-nik-yang-13895960/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-        </span><br />
-        <span>
-            <img src="/icons/instagram.png" width="16" alt="Instagram icon" style="vertical-align: middle; margin-right: 4px;" />
-            <a href="https://www.instagram.com/sirpoopala/" target="_blank" rel="noopener noreferrer">Instagram</a>
-        </span>
-    </p>
+  <h2>Socials</h2>
+  <p>
+    <span>
+      <img src="/icons/github.png" width="16" alt="GitHub icon" style="vertical-align: middle; margin-right: 4px;" />
+      <a href="https://github.com/jjyang97" target="_blank" rel="noopener noreferrer">GitHub</a>
+    </span><br />
+    <span>
+      <img src="/icons/linkedin.png" width="16" alt="LinkedIn icon" style="vertical-align: middle; margin-right: 4px;" />
+      <a href="https://www.linkedin.com/in/jiajun-nik-yang-13895960/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+    </span><br />
+    <span>
+      <img src="/icons/instagram.png" width="16" alt="Instagram icon" style="vertical-align: middle; margin-right: 4px;" />
+      <a href="https://www.instagram.com/sirpoopala/" target="_blank" rel="noopener noreferrer">Instagram</a>
+    </span>
+  </p>
 
-    <footer>
-        <hr />
-        <p>Last updated: <span id="last-updated"></span></p>
-        <script>
-            document.getElementById('last-updated').textContent = new Date().toLocaleDateString(undefined, {
-                year: 'numeric',
-                month: 'long',
-                day: 'numeric'
-            });
-        </script>
-    </footer>
+  <footer>
+    <hr />
+    <p>Last updated: <span id="last-updated"></span></p>
+    <script>
+      document.getElementById('last-updated').textContent = new Date().toLocaleDateString(undefined, {
+          year: 'numeric',
+          month: 'long',
+          day: 'numeric'
+      });
+    </script>
+  </footer>
+
+  <!-- Modal container hidden by default -->
+  <div id="work-modal" class="modal">
+    <div class="modal-content">
+      <span id="close-work-modal" class="close">&times;</span>
+      <h2>My Day Job</h2>
+      <p>This pays boba's biscuit money.</p>
+      <p>...detail work in progress</p>
+      <!-- Add more work details here -->
+    </div>
+  </div>
+
+  <script>
+    const modal = document.getElementById("work-modal");
+    const openBtn = document.getElementById("open-work-modal");
+    const closeBtn = document.getElementById("close-work-modal");
+
+    openBtn.onclick = function(event) {
+      event.preventDefault();
+      modal.style.display = "block";
+    }
+
+    closeBtn.onclick = function() {
+      modal.style.display = "none";
+    }
+
+    window.onclick = function(event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    }
+  </script>
 </body>
 </html>

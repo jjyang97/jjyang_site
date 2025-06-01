@@ -89,3 +89,49 @@ nav a.current {
   z-index: 10;
   position: relative;
 }
+
+/* Modal background */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1000; /* On top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full screen */
+  height: 100%;
+  overflow: auto; /* Enable scrolling if needed */
+  background-color: rgba(0,0,0,0.5); /* Black with opacity */
+}
+
+/* Modal content box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 10% auto; /* 10% from top and centered */
+  padding: 2em;
+  border: 1px solid #888;
+  width: 80%;
+  max-width: 600px;
+  font-family: monospace;
+  color: #000;
+}
+
+/* Close button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 24px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close:hover {
+  color: #000;
+  text-decoration: none;
+}
+
+.special-link {
+  color: #d14;          /* A distinct red-ish color */
+  font-weight: bold;
+  text-decoration: underline;
+  cursor: pointer;
+}
