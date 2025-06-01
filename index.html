@@ -1,65 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<link rel="icon" type="image/x-icon" href="/favicon.ico">
-  <meta charset="UTF-8">
-  <title>Jiajun Yang - Personal Site</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <style>
-    body {
-      font-family: monospace;
-      background-color: #fefefe;
-      color: #000;
-      max-width: 800px;
-      margin: 0 auto;
-      padding: 2em;
-    }
-    h1, h2 {
-      border-bottom: 1px solid #ccc;
-      padding-bottom: 0.2em;
-    }
-    a {
-      color: #003399;
-      text-decoration: underline;
-    }
-    ul {
-      list-style: square;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <title>Jiajun Yang - Personal Site</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <style>
+        body {
+            font-family: monospace;
+            background-color: #fefefe;
+            color: #000;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2em;
+        }
+        h1, h2 {
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 0.2em;
+        }
+        a {
+            color: #003399;
+            text-decoration: underline;
+        }
+        ul {
+            list-style: square;
+        }
+    </style>
 </head>
 <body>
-  <h1>Jiajun Yang</h1>
-  <p><strong>Data Engineer</strong><br>
-     Perth, Australia<br>
-     <a href="mailto:jjyang97@outlook.com">jjyang97@outlook.com</a></p>
+    <h1>Jiajun Yang</h1>
+    <p>
+        <strong>Data Engineer</strong><br>
+        Perth, Australia<br>
+        <a href="mailto:jjyang97@outlook.com">jjyang97@outlook.com</a>
+    </p>
 
-  <h2>Resume</h2>
-  <p><a href="/resume.pdf">Download PDF</a></p>
+    <h2>Resume</h2>
+    <p><a href="/resume.pdf">Download PDF</a></p>
 
-  <h2>Projects</h2>
-  <ul>
-    <li><strong>Home lab</strong> – building with Python and Synology NAS</li>
-    <!-- <li><strong>Universal Notification System</strong> – cross-platform alerts for personal + work</li> -->
-  </ul>
+    <h2>Projects</h2>
+    <ul>
+        <li><strong>Home lab</strong> – building with Python and Synology NAS</li>
+        <!-- <li><strong>Universal Notification System</strong> – cross-platform alerts for personal + work</li> -->
+    </ul>
 
-  <h2>Interests</h2>
-  <ul>
-    <li><strong>anime</strong> – Hunter x Hunter </li>
-    <li><strong>automation</strong> – home automation, factorio </li>
-    <li><strong>fitness</strong> – running, longevity </li>
-  </ul>  
-  <!-- <p>anime, automation, fitness.</p> -->
+    <h2>Interests</h2>
+    <ul>
+        <li><strong>anime</strong> – Hunter x Hunter</li>
+        <li><strong>automation</strong> – home automation, factorio</li>
+        <li><strong>basketball</strong> – nba fantasy</li>
+        <li><strong>fitness</strong> – running, longevity</li>
+    </ul>
+    <!-- <p>anime, automation, fitness.</p> -->
 
-  <footer>
-    <hr>
-    <p>Last updated: <span id="last-updated"></span></p>
-    <script>
-      document.getElementById('last-updated').textContent = new Date().toLocaleDateString(undefined, {
-        year: 'numeric',
-        month: 'long',
-        day: 'numeric'
-      });
-    </script>
-  </footer>
+    <h2>Socials</h2>
+    <p>
+    <span style="margin-right: 16px;">
+        <img src="/icons/github.png" width="16" alt="GitHub icon" style="vertical-align: middle; margin-right: 4px;">
+        <a href="https://github.com/YOUR-USERNAME" target="_blank">GitHub</a>
+    </span>
+
+    <span style="margin-right: 16px;">
+        <img src="/icons/linkedin.png" width="16" alt="LinkedIn icon" style="vertical-align: middle; margin-right: 4px;">
+        <a href="https://www.linkedin.com/in/YOUR-USERNAME" target="_blank">LinkedIn</a>
+    </span>
+
+    <span>
+        <img src="/icons/instagram.png" width="16" alt="Instagram icon" style="vertical-align: middle; margin-right: 4px;">
+        <a href="https://www.instagram.com/YOUR-USERNAME" target="_blank">Instagram</a>
+    </span>
+    </p>
+
+
+
+
+    <footer>
+        <hr>
+        <p>Last updated: <span id="last-updated"></span></p>
+        <script>
+            document.getElementById('last-updated').textContent = new Date().toLocaleDateString(undefined, {
+                year: 'numeric',
+                month: 'long',
+                day: 'numeric'
+            });
+        </script>
+    </footer>
 </body>
 </html>
