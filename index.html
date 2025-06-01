@@ -30,23 +30,30 @@
   <h1>Jiajun Yang</h1>
   <p><strong>Data Engineer</strong><br>
      Perth, Australia<br>
-     <a href="mailto:you@example.com">you@example.com</a></p>
+     <a href="mailto:jjyang97@outlook.com">jjyang97@outlook.com</a></p>
 
-  <h2>Résumé</h2>
+  <h2>Resume</h2>
   <p><a href="/resume.pdf">Download PDF</a></p>
 
   <h2>Projects</h2>
   <ul>
-    <li><strong>Weather Dashboard</strong> – built with Python and Synology NAS</li>
-    <li><strong>Universal Notification System</strong> – cross-platform alerts for personal + work</li>
+    <li><strong>Home lab</strong> – building with Python and Synology NAS</li>
+    <!-- <li><strong>Universal Notification System</strong> – cross-platform alerts for personal + work</li> -->
   </ul>
 
   <h2>Interests</h2>
-  <p>Saunas, running, anime, automation, retro tech.</p>
+  <p>anime, automation, fitness.</p>
 
   <footer>
     <hr>
-    <p>Last updated: May 2025</p>
+    <p>Last updated: <span id="last-updated"></span></p>
+    <script>
+      document.getElementById('last-updated').textContent = new Date().toLocaleDateString(undefined, {
+        year: 'numeric',
+        month: 'long',
+        day: 'numeric'
+      });
+    </script>
   </footer>
 </body>
 </html>
