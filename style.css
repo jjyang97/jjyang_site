@@ -1,56 +1,23 @@
-/* Base styles */
 body {
-  font-family: 'Courier New', monospace;
+  font-family: Tahoma, "MS Sans Serif", Geneva, sans-serif;
   background-color: #fefefe;
   color: #000;
   max-width: 800px;
   margin: 0 auto;
   padding: 2em;
+  font-size: 14px;
 }
 
-/* Headings */
 h1, h2 {
   border-bottom: 1px solid #ccc;
   padding-bottom: 0.2em;
 }
 
-/* Links */
 a {
   color: #003399;
   text-decoration: underline;
 }
 
-/* Lists */
 ul {
   list-style: square;
-  padding-left: 1.5em;
-}
-
-/* Navigation */
-nav {
-  margin-bottom: 2em;
-}
-
-nav a {
-  margin-right: 16px;
-  text-decoration: underline;
-  color: #000;
-}
-
-/* Footer */
-footer {
-  margin-top: 3em;
-  font-size: 0.9em;
-  color: #666;
-}
-
-/* Social icons */
-.social-icon {
-  vertical-align: middle;
-  margin-right: 4px;
-}
-
-.social-link {
-  margin-right: 16px;
-  display: inline-block;
 }
