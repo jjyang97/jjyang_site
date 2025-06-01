@@ -7,7 +7,12 @@ body {
     padding: 2em;
 }
 
-h1, h2 {
+h1 {
+    border-bottom: none; /* Remove border from h1 to avoid double line */
+    padding-bottom: 0;
+}
+
+h2 {
     border-bottom: 1px solid #ccc;
     padding-bottom: 0.2em;
 }
@@ -19,4 +24,68 @@ a {
 
 ul {
     list-style: square;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2em 0 1em 0;
+    font-family: monospace;
+    font-size: 13px;
+    border-bottom: 1px solid #ccc;  /* full width divider line */
+}
+
+.header h1 {
+    margin: 0;
+    font-weight: normal;
+}
+
+nav {
+    margin-bottom: 0;
+    text-align: right;
+}
+
+nav a {
+    color: #003399;
+    text-decoration: none;
+    margin: 0 0.5em;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+nav a.current {
+    color: grey;
+    pointer-events: none;
+    text-decoration: none;
+    font-weight: bold;
+    cursor: default;
+}
+
+.photo-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 10px;
+  margin-top: 1em;
+}
+
+.photo-gallery img {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  object-fit: cover;
+  aspect-ratio: 8 / 8;  /* keeps consistent shape */
+}
+
+.photo-gallery img:hover {
+  transform: scale(1.5);
+  box-shadow: 0 8px 15px rgba(0,0,0,0.3);
+  z-index: 10;
+  position: relative;
 }
